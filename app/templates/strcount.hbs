@@ -6,8 +6,9 @@
 </hgroup>
 
 <form>
-    <textarea name="str" id="str" cols="30" rows="7" placeholder="Insira o texto aqui" value={{this.value}} {{on "change" this.countString}}></textarea>
+    <textarea name="str" id="str" cols="30" rows="7" placeholder="Insira o texto aqui" value={{this.value}} {{on "change" this.countString}} {{on "keypress" this.countString}}></textarea>
 </form>
 
-<p>Total de palavras: <span>...</span></p>
-<p>Total de caracteres: <span>...</span></p>
+<p>Total de caracteres: <span id="qtdChar">...</span></p>
+<p>Total de palavras: <span id="qtdWord">...</span></p>
+
