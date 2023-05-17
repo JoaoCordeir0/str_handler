@@ -1,0 +1,13 @@
+{{page-title "Contador de palavras e caracteres"}}
+
+<hgroup>
+    <h1>Contador de palavras e caracteres</h1>
+    <h2></h2>
+</hgroup>
+
+<form>
+    <textarea name="str" id="str" cols="30" rows="7" placeholder="Insira o texto aqui" value={{this.value}} {{on "change" this.countString}}></textarea>
+</form>
+
+<p>Total de palavras: <span>...</span></p>
+<p>Total de caracteres: <span>...</span></p>
