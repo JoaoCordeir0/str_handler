@@ -3,7 +3,6 @@ import StrcountModel from '../models/strcount';
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
 
-
 export default class StrcountController extends Controller {
     @tracked value;
 
